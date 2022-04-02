@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polygon API | CEI</title>
+    <style>
+        #query-div{
+            text-align: center;
+            margin: 2vw;
+            padding: 2vw;
+        }
+        #name{
+            margin: 2vw;
+            padding: 0.75vw;
+            font-size: 0.75vw;
+            
+        }
+        .submit-button{
+            padding: 0.2vw;
+            font-family: sans-serif;
+
+        }
+        #stock-data{
+            text-align: center;
+            margin: 2vw;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-size: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="query-div">
+        <form class="search-bar" method="POST">
+            <input type="text" id="name" class = "input-field" name="name" placeholder="Search"><br>
+            <button class="submit-button"> Search </button>
+        </form>
+    </div>
+    <div id="stock-data">
+        <div>{{name}}</div>
+        <br>
+        <div>{{open_price}}</div>
+        <br>
+        <div>{{close_price}}</div>
+        <br>
+        <div>{{highest_price}}</div>
+    </div>
+</body>
+</html>
